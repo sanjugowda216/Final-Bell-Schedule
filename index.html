@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <center>
+    <a href="schedule.html"
+      style="text-decoration: none; background-color: #4CAF50; color: white; padding: 15px 35px; border-radius: 10px; border: none; cursor: pointer; font-size: 50px;">
+      EHS Bell Schedule
+    </a>
+  </center>
+
+
+  <center><time id="current-time"></time></p>
+  </center>
+
+  <script>
+    // Get the current time
+    function getCurrentTime() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+
+      // Determine AM or PM
+      var ampm = hours >= 12 ? 'PM' : 'AM';
+
+      // Convert hours to 12-hour format
+      hours = hours % 12;
+      hours = hours ? hours : 12; // 0 should be converted to 12
+
+      // Format the time as HH:MM:SS AM/PM
+      var Time = hours.toString().padStart(2, '0') + ':' +
+        minutes.toString().padStart(2, '0') + ':' +
+        seconds.toString().padStart(2, '0') + ' ' + ampm;
+
+      return Time;
+    }
+
+    // Update the time every second
+    function updateTime() {
+      var currentTimeElement = document.getElementById('current-time');
+      currentTimeElement.textContent = getCurrentTime();
+    }
+
+    // Update the time initially and start the timer
+    updateTime();
+    setInterval(updateTime, 1000);
+
+
+  </script>
+
+  <center><label id="class" style="font-family: Arial, sans-serif;">Current Class:</label></center>
+
+
+  <center><label id="countdown" style="font-family: Arial, Helvetica, sans-serif;">Countdown</label></center>
+
+
+</body>
+
+
+</html>
