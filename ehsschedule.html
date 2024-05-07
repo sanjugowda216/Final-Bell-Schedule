@@ -4,9 +4,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Class Schedule</title>
+  <title>EHS Class Schedule</title>
   <link href="ehsschedule.css" rel="stylesheet" type="text/css" />
+   <link rel="icon" type="image/png" href="imageehs.png">
   <style>
+    nav {
+      background-color: #FFFFFF;
+      overflow: hidden;
+      position: relative;
+      width: 100%; /* Set width to 100% */
+      font-family: Arial, sans-serif;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #197E30;
+      text-align: center;
+      padding: 20px 20px; /* Adjust the right padding as needed */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 31px;
+      line-height: 50px;
+    }
+
+
+
+      /* style for nav image */
+      nav img {
+        width:80px; 
+        float: left;
+      }
+
+
+    /* hover colorr */
+    nav a:hover {
+      background-color: #5DAA54; !important;
+      color: darkgreen; !important;
+    }
     table {
       border-collapse: collapse;
       width: 30%;
@@ -40,7 +74,16 @@
 
 <body>
   <center>
-    <h1 style="font-size: 24px; font-family: Arial">EHS Bell Schedule</h1>
+    <nav>
+      <img src="imageehs.png" >
+      <a href="index.html">Home Page</a>
+      <a href="schedule.html">Enter your classes</a>
+      <a href="rest.html">Restaurants Directory</a>
+    </nav>
+
+  </center>
+  <center>
+    <h1 style="font-size: 50px; font-family: Arial">EHS Bell Schedule</h1>
   </center>
   
   <div class="schedule-table-container">
@@ -166,7 +209,7 @@
 
     <!-- Third Table -->
     <table style="background-color:#6B8B6C" border="1" cellspacing="0" cellpadding="5">
-      <caption style="font-size: 25px;">Thursday</caption>
+      <caption style="font-size: 25px;">Thursday Schedule</caption>
       <tr>
         <th>Period</th>
         <th>Start Time</th>
@@ -176,69 +219,109 @@
       <!-- Table rows here -->
       <tr>
         <td>0 (A)</td>
-        <td>7:26 AM</td>
-        <td>8:23 AM</td>
+        <td>7:10 AM</td>
+        <td>8:43 AM</td>
+        <td>93 min</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>8:50 AM</td>
+        <td>10:24 AM</td>
+        <td>94 min</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>10:31 AM</td>
+        <td>12:05 PM</td>
+        <td>94 min</td>
+      </tr>
+      <tr>
+        <td>Lunch</td>
+        <td>12:05 PM</td>
+        <td>12:35 PM</td>
+        <td>30 min</td>
+      </tr>
+      <tr>
+        <td>Access Period</td>
+        <td>12:42 AM</td>
+        <td>1:32 PM</td>
+        <td>50 min</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>1:39 PM</td>
+        <td>3:13 PM</td>
+        <td>94 min</td>
+      </tr>
+      <tr>
+        <td>7 (B)</td>
+        <td>3:20 PM</td>
+        <td>4:17 PM</td>
         <td>57 min</td>
+      </tr>
+      
+    </table>
+  </div>
+  <!-- Fourth Table -->
+    <center><table style="background-color:#6B8B6C" border="1" cellspacing="0" cellpadding="5">
+      <caption style="font-size: 25px;">Minimum Day</caption>
+      <tr>
+        <th>Period</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Length</th>
+      </tr>
+      <tr>
+        <td>0 (A)</td>
+        <td>7:48 AM</td>
+        <td>8:23 AM</td>
+        <td>35 min</td>
       </tr>
       <tr>
         <td>1</td>
         <td>8:30 AM</td>
-        <td>9:27 AM</td>
-        <td>57 min</td>
+        <td>9:05 AM</td>
+        <td>35 min</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>9:34 AM</td>
-        <td>10:31 AM</td>
-        <td>57 min</td>
+        <td>9:12 AM</td>
+        <td>9:47 AM</td>
+        <td>35 min</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>10:38 AM</td>
-        <td>11:35 AM</td>
-        <td>57 min</td>
+        <td>9:54 AM</td>
+        <td>10:29 AM</td>
+        <td>35 min</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>11:42 AM</td>
-        <td>12:39 PM</td>
-        <td>57 min</td>
-      </tr>
-      <tr>
-        <td>Lunch</td>
-        <td>12:39 PM</td>
-        <td>1:09 PM</td>
-        <td>30 min</td>
+        <td>10:36 AM</td>
+        <td>11:11 AM</td>
+        <td>35 min</td>
       </tr>
       <tr>
         <td>5</td>
-        <td>1:16 PM</td>
-        <td>2:13 PM</td>
-        <td>57 min</td>
+        <td>11:18 AM</td>
+        <td>11:53 AM</td>
+        <td>35 min</td>
       </tr>
       <tr>
         <td>6</td>
-        <td>2:20 PM</td>
-        <td>3:17 PM</td>
-        <td>57 min</td>
+        <td>12:00 PM</td>
+        <td>12:35 PM</td>
+        <td>35 min</td>
       </tr>
       <tr>
-        <td>7(B)</td>
-        <td>3:24 PM</td>
-        <td>4:21 PM</td>
-        <td>57 min</td>
+        <td>7 (B)</td>
+        <td>12:42 PM</td>
+        <td>1:21 PM</td>
+        <td>35 min</td>
       </tr>
-      <!-- More rows here -->
-    </table>
-  </div>
-
-  <div class="goback-container">
-    <center>
-      <a href="index.html" style="text-decoration: none; background-color: #4CAF50; color: white; padding: 10px 20px; border-radius: 10px; border: none; cursor: pointer; font-size: 15px;">
-        Go Back
-      </a>
-    </center>
-  </div>
+     
+    </table></center>
+ 
 
 </body>
 

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="imageehs.png">
+  <title>Restaurants Near EHS</title>
+  <style>
+    /* style */
+
+    nav {
+      background-color: #FFFFFF;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #197E30;
+      text-align: center;
+      padding: 20px 20px; /* Adjust the right padding as needed */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 31px;
+      line-height: 50px;
+    }
+
+    /* style for nav image */
+    nav img {
+      width:80px; 
+      float: left;
+    }
+
+    /* hover color */
+    nav a:hover {
+      background-color: #5DAA54; !important;
+      color: darkgreen; !important;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #197E30;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 80px; /* Adjusted padding to account for the fixed navigation bar */
+    }
+
+    .container {
+      margin-top: 80px; /* Added margin to account for the height of the navigation bar */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-front {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-front::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Adjust opacity here */
+    }
+
+    .card-back {
+      background-color: #5DAA54;
+      transform: rotateY(180deg);
+    }
+
+    .restaurant-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="imageehs.png" >
+    <a href="index.html">Home Page</a>
+    <a href="ehsschedule.html">EHS Schedule</a>
+    <a href="schedule.html">Enter your classes</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('tea.jpg');">
+          <h2 style="z-index: 1; position: relative;">Teazentea</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Teazii Boba</h2>
+            <p>Address: 123 Green Street</p>
+            <p>Phone: 555-1234</p>
+            <p>Opening Hours: 10am - 10pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('may.jpg');">
+          <h2 style="z-index: 1; position: relative;">Mayflower</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Forest Road</p>
+            <p>Phone: 555-5678</p>
+            <p>Opening Hours: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('dog.png');">
+          <h2 style="z-index: 1; position: relative;">Myungrang Hotdog</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Forest Road</p>
+            <p>Phone: 555-5678</p>
+            <p>Opening Hours: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('pik.jfif');">
+          <h2 style="z-index: 1; position: relative;">PiKaSo</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Forest Road</p>
+            <p>Phone: 555-5678</p>
+            <p>Opening Hours: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('yog.png');">
+          <h2 style="z-index: 1; position: relative;">Cuppa Yo Frozen Yogurt</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Forest Road</p>
+            <p>Phone: 555-5678</p>
+            <p>Opening Hours: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('indian.jpg');">
+          <h2 style="z-index: 1; position: relative;">Kailash Parbat</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Forest Road</p>
+            <p>Phone: 555-5678</p>
+            <p>Opening Hours: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front" style="background-image: url('chaat.jpg');">
+          <h2 style="z-index: 1; position: relative;">Chaat Bhavan</h2>
+        </div>
+        <div class="card-back">
+          <div class="restaurant-info">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Forest Road</p>
+            <p>Phone: 555-5678</p>
+            <p>Opening Hours: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+</body>
+
+</html>
