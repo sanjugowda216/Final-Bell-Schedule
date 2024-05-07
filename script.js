@@ -120,6 +120,10 @@ function updateTime() {
 
   }
 
+  if (currentDay === 6 || currentDay===7) {
+    classLabel.innerText = "No Classes" || "Not Set";
+  }
+
 
 
 }
