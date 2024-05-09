@@ -16,13 +16,16 @@
       top: 0;
       width: 100%;
       font-family: Arial, sans-serif;
+      z-index: 1;
     }
+
     nav a {
       float: left;
       display: block;
       color: #197E30;
       text-align: center;
-      padding: 20px 20px; /* Adjust the right padding as needed */
+      padding: 20px 20px;
+      /* Adjust the right padding as needed */
       text-decoration: none;
       font-weight: bold;
       font-size: 31px;
@@ -31,19 +34,24 @@
 
     /* style for nav image */
     nav img {
-      width:80px; 
+      width: 80px;
       float: left;
     }
 
     /* hover color */
     nav a:hover {
-      background-color: #5DAA54; !important;
-      color: darkgreen; !important;
+      background-color: #5DAA54;
+      !important;
+      color: darkgreen;
+      !important;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #197E30;
+      background-image: url("green.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       color: #fff;
       margin: 0;
       padding: 0;
@@ -51,11 +59,13 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding-top: 80px; /* Adjusted padding to account for the fixed navigation bar */
+      padding-top: 80px;
+      /* Adjusted padding to account for the fixed navigation bar */
     }
 
     .container {
-      margin-top: 80px; /* Added margin to account for the height of the navigation bar */
+      margin-top: 80px;
+      /* Added margin to account for the height of the navigation bar */
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
@@ -121,6 +131,8 @@
 
     h2,
     p {
+      color: white;
+      font-size: 20px;
       margin: 0;
     }
   </style>
@@ -128,30 +140,68 @@
 
 <body>
   <nav>
-    <img src="imageehs.png" >
+    <img src="imageehs.png">
     <a href="index.html">Home Page</a>
     <a href="ehsschedule.html">EHS Schedule</a>
     <a href="schedule.html">Enter your classes</a>
   </nav>
 
   <div class="container">
-    <a href="https://example.com/teazentea">
+    <a href="https://www.chaatbhavan.com/">
       <div class="card">
         <div class="card-inner">
-          <div class="card-front" style="background-image: url('tea.jpg');">
-            <h2 style="z-index: 1; position: relative;">Teazentea</h2>
+          <div class="card-front" style="background-image: url('chaat.jpg');">
+            <h2 style="z-index: 1; position: relative;">Chaat Bhavan</h2>
           </div>
           <div class="card-back">
             <div class="restaurant-info">
-              <h2>Teazii Boba</h2>
-              <p>Address: 123 Green Street</p>
-              <p>Phone: 555-1234</p>
-              <p>Opening Hours: 10am - 10pm</p>
+              <h2>Walk: 10min</h2>
+              <h2>Drive: 4min</h2>
+              <p>Address: 4112 Grafton St</p>
+              <p>Phone: (925) 829-1700</p>
+              <p>Opening Hours: 10:30am - 10pm</p>
             </div>
           </div>
         </div>
       </div>
     </a>
+    <a href="https://www.cuppayo.com/">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('yog.png');">
+            <h2 style="z-index: 1; position: relative;">Cuppa Yo Frozen Yogurt</h2>
+          </div>
+          <div class="card-back">
+            <div class="restaurant-info">
+              <h2>Walk: 19min</h2>
+              <h2>Drive: 4min</h2>
+              <p>Address: 3970 Summit Rd</p>
+              <p>Phone: (925) 361-0519</p>
+              <p>Opening Hours: 11:30am - 10pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.yelp.com/biz/mayflower-restaurant-dublin">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('indian.jpg');">
+            <h2 style="z-index: 1; position: relative;">Kailash Parbat</h2>
+          </div>
+          <div class="card-back">
+            <div class="restaurant-info">
+              <h2>Walk: 20min</h2>
+              <h2>Drive: 4min</h2>
+              <p>Address: 3982 Summit Rd</p>
+              <p>Phone: (925) 267-6666</p>
+              <p>Opening Hours: 11:30am - 9:30pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    
 
     <a href="https://example.com/mayflower">
       <div class="card">
@@ -164,14 +214,14 @@
               <h2>Mayflower</h2>
               <p>Address: 456 Forest Road</p>
               <p>Phone: 555-5678</p>
-              <p>Opening Hours: 11am - 11pm</p>
+              <p>Opening Hours: 11am -2:30pm</p>
             </div>
           </div>
         </div>
       </div>
     </a>
 
-    <a href="https://example.com/myungranghotdog">
+    <a href="http://myungrangamerica.com/">
       <div class="card">
         <div class="card-inner">
           <div class="card-front" style="background-image: url('dog.png');">
@@ -179,17 +229,18 @@
           </div>
           <div class="card-back">
             <div class="restaurant-info">
-              <h2>Myungrang Hotdog</h2>
-              <p>Address: 789 Oak Avenue</p>
-              <p>Phone: 555-9876</p>
-              <p>Opening Hours: 10am - 10pm</p>
+              <h2>Walk: 20min</h2>
+              <h2>Drive: 4min</h2>
+              <p>Address: 3994 Summit Rd</p>
+              <p>Phone: (925) 587-2161</p>
+              <p>Opening Hours: 11am - 8pm</p>
             </div>
           </div>
         </div>
       </div>
     </a>
 
-    <a href="https://example.com/pikaso">
+    <a href="https://pikasoeats.com/">
       <div class="card">
         <div class="card-inner">
           <div class="card-front" style="background-image: url('pik.jfif');">
@@ -197,69 +248,40 @@
           </div>
           <div class="card-back">
             <div class="restaurant-info">
-              <h2>PiKaSo</h2>
-              <p>Address: 246 Pine Street</p>
-              <p>Phone: 555-2468</p>
-              <p>Opening Hours: 9am - 9pm</p>
+              <h2>Walk: 21min</h2>
+              <h2>Drive: 4min</h2>
+              <p>Address: 3980 Summit Rd</p>
+              <p>Phone: (925) 587-2153</p>
+              <p>Opening Hours: 10am - 10pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.teazentea.com/">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('tea.jpg');">
+            <h2 style="z-index: 1; position: relative;">Teavoli</h2>
+          </div>
+          <div class="card-back">
+            <div class="restaurant-info">
+              <h2>Walk: 20min</h2>
+              <h2>Drive: 4min</h2>
+              <p>Address: 123 Green Street</p>
+              <p>Phone: 555-1234</p>
+              <p>Opening Hours: 10am - 10pm</p>
             </div>
           </div>
         </div>
       </div>
     </a>
 
-    <a href="https://example.com/cuppayofrozenyogurt">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front" style="background-image: url('yog.png');">
-            <h2 style="z-index: 1; position: relative;">Cuppa Yo Frozen Yogurt</h2>
-          </div>
-          <div class="card-back">
-            <div class="restaurant-info">
-              <h2>Cuppa Yo Frozen Yogurt</h2>
-              <p>Address: 357 Maple Lane</p>
-              <p>Phone: 555-3579</p>
-              <p>Opening Hours: 12pm - 10pm</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
+    
 
-    <a href="https://example.com/kailashparbat">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front" style="background-image: url('indian.jpg');">
-            <h2 style="z-index: 1; position: relative;">Kailash Parbat</h2>
-          </div>
-          <div class="card-back">
-            <div class="restaurant-info">
-              <h2>Kailash Parbat</h2>
-              <p>Address: 901 Cherry Avenue</p>
-              <p>Phone: 555-9012</p>
-              <p>Opening Hours: 11am - 10pm</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
+    
 
-    <a href="https://example.com/chaatbhavan">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front" style="background-image: url('chaat.jpg');">
-            <h2 style="z-index: 1; position: relative;">Chaat Bhavan</h2>
-          </div>
-          <div class="card-back">
-            <div class="restaurant-info">
-              <h2>Chaat Bhavan</h2>
-              <p>Address: 1357 Elm Street</p>
-              <p>Phone: 555-1357</p>
-              <p>Opening Hours: 10am - 9pm</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
+    
     <!-- Add more cards as needed -->
   </div>
 </body>
